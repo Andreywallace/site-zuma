@@ -26,6 +26,7 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
 
 
     <!-- CSS -->
@@ -41,9 +42,10 @@
 
 <body>
 
-    <header style="margin-bottom:-20px">
+    <header>
         <!--Video Section-->
-        <section class="content-section video-section hidden-xs">
+        <section class="content-section  hidden-xs">
+            <!--
             <div class="pattern-overlay">
                 <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=V_IIcyUznws&feature=youtu.be',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}"></a>
                 <div class="container" style="margin-top: -100px;">
@@ -55,6 +57,25 @@
                     </div>
                 </div>
             </div>
+-->
+
+            <div id="container">
+                <video autoplay loop muted>
+                    <source src="video/zuma.mp4" type="video/mp4">
+                        <source src="video/flowers.webm" type="video/webm">
+                </video>
+
+                <div class="content">
+                    <div class="col-lg-12">
+                        <img src="img/zuma_imagem.png" class="centralizar-imagem zuma-logo-principal animated  flipInX" />
+                        <h3> </h3>
+                    </div>
+                </div>
+
+
+            </div>
+
+
         </section>
         <!--Video Section Ends Here-->
 
@@ -62,245 +83,161 @@
 
 
 
-        <div id="custom-bootstrap-menu" class="navbar navbar-default menu " role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <a id="brand" class="navbar-brand opcao-menu-brand" style="padding: 20px 20px;" href="#"><img src="img/zuma_logo.png">
-                    </a>
+        <div id="custom-bootstrap-menu" class="navbar navbar-default menu menu-sempre-fixo" role="navigation">
 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse navbar-menubuilder">
-                    <ul class="nav navbar-nav navbar-left hidden-md hidden-lg">
-                        <li><a href="#sobre" class="opcao-menu ">Sobre</a>
-                        </li>
-                        <li><a href="#fazemos" class="opcao-menu">O que fazemos?</a>
-                        </li>
-                        <li><a href="#portifolio" class="opcao-menu">Portifólio</a>
-                        </li>
-                        <li><a href="#contato" class="opcao-menu">Contato</a>
-                        </li>
-                    </ul>
+            <div class="navbar-header">
+                <a id="brand" class="navbar-brand opcao-menu-brand" style="padding: 20px 20px;" href="#"><img src="img/zuma_logo.png">
+                </a>
 
-                    <ul class="nav navbar-nav navbar-left hidden-xs hidden-sm">
-                        <li><a href="#sobre" class="opcao-menu " style="padding: 40px 20px;">Sobre</a>
-                        </li>
-                        <li><a href="#fazemos" class="opcao-menu" style="padding: 40px 20px;">O que fazemos?</a>
-                        </li>
-                        <li><a href="#portifolio" class="opcao-menu" style="padding: 40px 20px;">Portifólio</a>
-                        </li>
-                        <li><a href="#contato" class="opcao-menu" style="padding: 40px 20px;">Contato</a>
-                        </li>
-                    </ul>
-                </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder" style="background:black">
+                <ul class="nav navbar-nav navbar-left hidden-md hidden-lg">
+                    <li><a href="#sobre" class="opcao-menu ">Sobre</a>
+                    </li>
+                    <li><a href="#fazemos" class="opcao-menu">O que fazemos?</a>
+                    </li>
+                    <li><a href="#portifolio" class="opcao-menu">Portifólio</a>
+                    </li>
+                    <li><a href="#contato" class="opcao-menu">Contato</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-left hidden-xs hidden-sm">
+                    <li><a href="#sobre" class="opcao-menu " style="padding: 40px 20px;">Sobre</a>
+                    </li>
+                    <li><a href="#fazemos" class="opcao-menu" style="padding: 40px 20px;">O que fazemos?</a>
+                    </li>
+                    <li><a href="#portifolio" class="opcao-menu" style="padding: 40px 20px;">Portifólio</a>
+                    </li>
+                    <li><a href="#contato" class="opcao-menu" style="padding: 40px 20px;">Contato</a>
+                    </li>
+                </ul>
+
+
             </div>
 
 
+
+            <div href="#screens" id="transicao">
+
+                <img src="http://www.radiorock.com.br/wp-content/themes/avenue/Avenue/static/img/razura-preta-topo.png" style="    margin-top: 0px;min-width: 100%;max-height: 40px;" />
+
+
+            </div>
+
         </div>
+
+
 
 
     </header>
 
 
 
+
+
     <section id="sobre">
-        <div class="col-lg-12 col-sm-12 col-md-12 ">
-            <h1 class="titulo-sessao wow slideInLeft" style="color:white">NOSSA HISTÓRIA</h1>
-            <h3 class="sub-titulo-sessao">.</h3>
-        </div>
         <div class="container">
 
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="papers text-center wow zoomIn">
-                        <p>
-                            A Zuma Filmes é uma jovem produtora nascida do encontro entre quatro jovens realizadores e produtores audiovisuais sergipanos, que visualizam nessa parceria a oportunidade de produção de conteúdos fílmicos voltados à veiculação em suportes que dialogam com as novas tecnologias e novas mídias.
-                        </p>
 
-                        <p>
-                            Nos propomos a ser um laboratório de experimentação e concepção de conteúdos audiovisuais, que versam com a linguagem cinematográfica. Nesse contexto, produzimos filmes publicitários para internet, filmes corporativos e de marca.</p>
-                        </p>
-                    </div>
+
+
+            <div class="col-lg-8 col-sm-12 col-md-12 col-lg-offset-2">
+
+                <h1 class="titulo-sessao wow slideInLeft" style="text-shadow:none">Descubra a Zuma</h1>
+                <h3 class="sub-titulo-sessao wow slideInRight" style="text-shadow:none;padding-bottom:20px">Uma produtora criativa de vídeos.</h3>
+                <div class="embed-responsive embed-responsive-16by9" style="  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HD_xsGOJ8qA" frameborder="0" allowfullscreen></iframe>
                 </div>
+            </div>
 
+
+
+        </div>
+    </section>
+
+    <section id="parallaxBar" class="hidden-xs" data-speed="6" data-type="background">
+        <div style="background:url(http://zuma.helloworldsoft.com/img/bg_video.png);height:100%">
+            <div class="container">
+                <h1 style="color:white;text-align:center;padding-top:50px">Somos uma produtora responsável pela criação de conteúdos audiovisuais, que versam com a linguagem cinematográfica.</h1>
             </div>
         </div>
     </section>
 
 
-    <section id="fazemos">
-        <div class="col-lg-10 col-sm-12 col-md-12 col-lg-offset-2">
-            <h1 class="titulo-sessao wow slideInLeft">O QUE FAZEMOS?</h1>
-            <h3 class="sub-titulo-sessao wow slideInRight">Conectamos seu mundo ao universo.</h3>
-        </div>
-
-        <div class="container-fluid" style="margin-left:5%">
-            <div class="row">
-                <div class="col-lg-10 col-md-12 col-sm-12">
-
-                    <ul class="timeline">
-                        <li class="">
-                            <div class="timeline-image  wow flipInY">
-                                <img class="img-circle img-responsive  wow flipInY" src="img/planejamento.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-
-                                    <h2 class="subheading  wow slideInLeft">Vídeo</h2>
-                                </div>
-                                <div class="timeline-body">
-
-                                    <ul class="fa-ul ul-custom icon-right hidden-sm hidden-xs">
-                                        <li class="wow fadeInUp" data-wow-delay="0.1s"><i class="fa-li fa fa-2x  fa-camera "></i>
-                                            <p>Edição</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.3s"><i class="fa-li fa fa-2x  fa-camera "></i>
-                                            <p>Filmagem</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.5s"><i class="fa-li fa fa-2x fa-camera "></i>
-                                            <p>Produção</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.7s"><i class="fa-li fa fa-2x fa-camera "></i>
-                                            <p>Finalização</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.9s"><i class="fa-li fa fa-2x fa-camera "></i>
-                                            <p>Color correction</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="1.1s"><i class="fa-li fa fa-2x fa-camera "></i>
-                                            <p>Color granding</p>
-                                        </li>
-                                    </ul>
-
-                                    <ul class="fa-ul ul-custom icon-right hidden-md hidden-lg">
-                                        <li class="wow fadeInUp" data-wow-delay="0.1s"><i class="fa-li fa   fa-camera "></i>
-                                            <p>Edição</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.3s"><i class="fa-li fa   fa-camera "></i>
-                                            <p>Filmagem</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.5s"><i class="fa-li fa  fa-camera "></i>
-                                            <p>Produção</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.7s"><i class="fa-li fa  fa-camera "></i>
-                                            <p>Finalização</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.9s"><i class="fa-li fa  fa-camera "></i>
-                                            <p>Color correction</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="1.1s"><i class="fa-li fa fa-camera "></i>
-                                            <p>Color granding</p>
-                                        </li>
-                                    </ul>
-
-
-                                </div>
-                            </div>
-                            <div class="line"></div>
-                        </li>
-                        <li class="timeline-inverted timeline-abaixo">
-                            <div class="timeline-image">
-                                <div id="bars">
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-                                    <div class="bar"></div>
-
-                                </div>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-
-                                    <h2 class="subheading">Audio</h4>
+    <section id="fazemo">
+        <div class="container">
+            <div class="col-lg-10 col-sm-12 col-md-12 col-lg-offset-2" style="padding-bottom:30px">
+                <h1 class="titulo-sessao wow slideInLeft" style="text-align:right">Nossos serviços</h1>
+                <h3 class="sub-titulo-sessao wow slideInRight" style="text-align:right"></h3>
             </div>
-            <div class="timeline-body">
-             <ul class="fa-ul  hidden-sm hidden-xs">
-                 <li class="wow fadInUp" data-wow-delay="0.1s"><i class="fa-li fa fa-2x fa-microphone "></i><p>Sonorização</p></li>
-  <li class="wow fadeInUp" data-wow-delay="0.3s"><i class="fa-li fa fa-2x fa-microphone "></i><p>Trilhas Autorais</p></li>
-  <li class="wow fadeInUp" data-wow-delay="0.5s"><i class="fa-li fa fa-2x fa-microphone "></i><p>Produção de spots</p></li>
-</ul>
-                
-                  <ul class="fa-ul  hidden-md hidden-lg">
-  <li class="wow fadeInUp" data-wow-delay="0.1s"><i class="fa-li fa  fa-microphone "></i><p>Sonorização</p></li>
-  <li class="wow fadeInUp" data-wow-delay="0.3s"><i class="fa-li fa  fa-microphone "></i><p>Trilhas Autorais</p></li>
-  <li class="wow fadeInUp" data-wow-delay="0.5s"><i class="fa-li fa  fa-microphone "></i><p>Produção de spots</p></li>
-</ul>
-                
-            </div>
-          </div>
-          <div class="line"></div>
-        </li>
-        <li class="timeline-abaixo">
-          <div class="timeline-image " id="earth"> 
-            
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-            
-              <h2 class="subheading">Animação</h2>
-                                </div>
-                                <div class="timeline-body">
-                                    <ul class="fa-ul ul-custom icon-right hidden-sm hidden-xs">
-                                        <li>
-                                            <p class="wow fadeInUp" data-wow-delay="0.1s">Edição</p><i class="fa-li fa fa-2x fa-spinner "></i>
-                                        </li>
-                                        <li  class="wow fadeInUp" data-wow-delay="0.3s"><i class="fa-li fa fa-2x fa-spinner "></i>
-                                            <p>Motion Graphics</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.5s"><i class="fa-li fa fa-2x fa-spinner  "></i>
-                                            <p>Animação de objetos</p>
-                                        </li>
 
-                                    </ul>
-                                    <ul class="fa-ul ul-custom icon-right hidden-md hidden-lg">
-                                        <li class="wow fadeInUp" data-wow-delay="0.1s">
-                                            <p>Edição</p><i class="fa-li fa  fa-spinner fa-spin"></i>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.3s"><i class="fa-li fa fa-spinner fa-spin "></i>
-                                            <p>Motion Graphics</p>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-delay="0.5s"><i class="fa-li fa fa-spinner fa-spin "></i>
-                                            <p>Animação de objetos</p>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </li>
-
-
-                    </ul>
+            <div class="col-lg-4">
+                <img src="http://www.laboratoire-aleatoire.com/wp-content/uploads/2015/04/canon-camera-3.jpg" style="max-width:100%;max-height:200px">
+                <h4>Produção de vídeo</h4>
+                <div class="notice notice-success">
+                    <strong>Edição</strong>
                 </div>
+                <div class="notice notice-success">
+                    <strong>Filmagem</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Produção</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Finalização</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Color correction</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Color granding</strong>
+                </div>
+            </div>
+            <div class="col-lg-4">
+
+                <img src="http://www.mvaudiogroup.com/wp-content/uploads/2015/01/mixing-desk1.jpg" style="max-width:100%;max-height:200px">
+                <h4>Audio</h4>
+                <div class="notice notice-success">
+                    <strong>Sonorização</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Trilhas Autorais</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Produção de spots</strong>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="http://www.mvaudiogroup.com/wp-content/uploads/2015/01/mixing-desk1.jpg" style="max-width:100%;max-height:200px">
+                <h4>Animação</h4>
+                <div class="notice notice-success">
+                    <strong>Edição</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Motion Graphics</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Animação de objetos</strong>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section id="parallaxBar" class="hidden-xs" data-speed="6" style="background: url('https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn2/v/t1.0-9/544464_324743060945853_172408449_n.jpg?oh=aa2345a0d18a3f5e0643877c5ec60ad7&oe=56430290&__gda__=1446873822_d6c2e0e4ab41ebb860b1f8379a950ecb') 0% 0 fixed;background-size:cover">
+        <div style="background:url(http://zuma.helloworldsoft.com/img/bg_video.png);height:100%;">
+            <div class="container">
+                <h1 style="color:white;text-align:center;padding-top:50px">Produzimos filmes publicitários para tv ou internet, filmes corporativos e de marca.</h1>
             </div>
         </div>
     </section>
+
+
 
 
 
@@ -308,8 +245,8 @@
     <section id="portifolio">
         <div class="container">
             <div class="col-md-12 " style="padding-bottom:20px">
-                <h1 class="titulo-sessao wow slideInRight"> PORTIFOLIO </h1>
-                <p style="text-align:center; " class="wow slideInLeft"> Estes são os nossos trabalhos e nossa identidade</p>
+                <h1 class="titulo-sessao wow slideInRight">Principais  Clientes </h1>
+                <p style="text-align:center; " class="wow slideInLeft">Conheça com quem já trabalhamos.</p>
             </div>
 
             <div class="col-lg-4 col-md-6 wow flipInX " data-wow-delay="0.1s">
@@ -317,35 +254,27 @@
                     <div class="card">
                         <div class="front">
                             <div class="cover">
-                                <img src="img/videos/sambadecoco.png" />
+                                <img src="img/videos/baneselogo.jpg" />
                             </div>
 
                             <div class="content">
                                 <div class="main">
-                                    <h3 class="name">Oficina de Samba de Coco no São João da Gente Sergipana</h3>
-                                    <h5>Cliente: Instituto Banese </h5>
-                                    <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
+                                    <h3 class="name">Instituto Banese</h3>
 
+                                    <h5 style="text-align:center"><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
                                 </div>
                             </div>
                         </div>
                         <!-- end front panel -->
                         <div class="back">
                             <div class="header">
-                                <h5 class="motto">"A oficina de Samba de Coco com o mestre Seu Diô foi uma das atrações do São João da Gente Sergipana 2014"</h5>
+                                <img src="img/videos/foliadagente.png" style="max-width:100%" />
                             </div>
                             <div class="content">
                                 <div class="main">
 
-                                    <div class="round-button centralizar-imagem ">
-                                        <div class="round-button-circle btn-card-play">
-                                            <a class="round-button" data-toggle="modal" data-target="#md_samba_coco">
-                                                <p class="fa fa-3x fa fa-play" style="  margin-top: -15px;padding-left:10px"></p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-
+                                    <h5 class="motto">"Trabalhamos para o Instituto Banese desde 2014 e já fizemos cobertura de diversos eventos deles."</h5>
+                                    <h5 style="text-align:center"><a href="https://www.youtube.com/user/InstitutoBanese" target="_blank">YouTube</a></h5>
 
                                 </div>
                             </div>
@@ -365,14 +294,14 @@
                     <div class="card">
                         <div class="front">
                             <div class="cover">
-                                <img src="img/videos/nutempo.jpg" />
+                                <img src="img/videos/nudance.jpg" />
                             </div>
 
                             <div class="content">
                                 <div class="main">
-                                    <h3 class="name">Nu Tempo Dance Space</h3>
-                                    <h5>Cliente: Nu Tempo Dance Company </h5>
-                                    <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
+                                    <h3 class="name">Nu Tempo Dance Company</h3>
+
+                                    <h5 style="text-align:center"><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
 
                                 </div>
                             </div>
@@ -380,18 +309,13 @@
                         <!-- end front panel -->
                         <div class="back">
                             <div class="header">
-                                <h5 class="motto">Fundada pelo mestre-coreógrafo Everaldo Pereira, a Nu Tempo Dance Company considera que a dança é a arte por excelência.</h5>
+                                <img src="img/videos/nutempo.jpg" style="max-width:100%" />
                             </div>
                             <div class="content">
                                 <div class="main">
+                                    <h5 class="motto">Fundada pelo mestre-coreógrafo Everaldo Pereira, a Nu Tempo Dance Company considera que a dança é a arte por excelência.</h5>
+                                    <h5 style="text-align:center"><a href="https://www.facebook.com/nutempooficial" target="_blank">Facebook</a></h5>
 
-                                    <div class="round-button centralizar-imagem ">
-                                        <div class="round-button-circle btn-card-play">
-                                            <a class="round-button" data-toggle="modal" data-target="#md_nu_tempo">
-                                                <p class="fa fa-3x fa fa-play" style="  margin-top: -15px;padding-left:10px"></p>
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
 
@@ -410,33 +334,25 @@
                     <div class="card">
                         <div class="front">
                             <div class="cover">
-                                <img src="img/videos/foliadagente.png" />
+                                <img src="img/videos/sesclogo.jpg" />
                             </div>
 
                             <div class="content">
                                 <div class="main">
-                                    <h3 class="name">Apresentação da Orquestra Zé Frevança em Laranjeiras</h3>
-                                    <h5>Cliente: Instituto Banese</h5>
+                                    <h3 class="name">Sesc Sergipe</h3> 
                                     <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
-
                                 </div>
                             </div>
                         </div>
                         <!-- end front panel -->
                         <div class="back">
                             <div class="header">
-                                <h5 class="motto">Apresentação da Orquestra Zé Frevança em Laranjeiras durante a feirinha da gente.</h5>
+                                                                <img src="img/videos/foliadagente.png" style="max-width:100%" />
                             </div>
                             <div class="content">
                                 <div class="main">
-
-                                    <div class="round-button centralizar-imagem ">
-                                        <div class="round-button-circle btn-card-play">
-                                            <a class="round-button" data-toggle="modal" data-target="#md_orquestra_ze">
-                                                <p class="fa fa-3x fa fa-play" style="  margin-top: -15px;padding-left:10px"></p>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <h5 class="motto">Em 2015 começamos a desenvolver uma série de vídeos para o Sesc Sergipe.</h5>
+   <h5 style="text-align:center"><a href="http://www.sesc-se.com.br/" target="_blank">Site</a></h5>
                                 </div>
                             </div>
 
@@ -449,55 +365,32 @@
             </div>
             <!-- FIM CLIENTE 3 -->
 
-            <!-- CLIENTE 4 -->
-            <div class="col-lg-4 col-md-6 wow flipInX " data-wow-delay="1.3s">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/videos/babi01.png" />
-                            </div>
 
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Campanha Política 2014 - Deputada Estadual Babi</h3>
-                                    <h5>Cliente: P-SOL</h5>
-                                    <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">Campanha 2014 - Vereadora Babi.</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-
-                                    <div class="round-button centralizar-imagem ">
-                                        <div class="round-button-circle btn-card-play">
-                                            <a class="round-button" data-toggle="modal" data-target="#md_orquestra_ze">
-                                                <p class="fa fa-3x fa fa-play" style="  margin-top: -15px;padding-left:10px"></p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- end back panel -->
-                    </div>
-                    <!-- end card -->
-                </div>
-                <!-- end card-container -->
-            </div>
-            <!-- FIM CLIENTE 4 -->
 
         </div>
 
     </section>
+    
+    
 
+        <section id="parallaxBar" class="hidden-xs" data-speed="6" style="background: url('http://animationvilla.org/wp-content/uploads/2014/08/How-to-Make-an-Animated-Movie-1.jpg') 0% 0 fixed;background-size:cover">
+        <div style="background:url(http://zuma.helloworldsoft.com/img/bg_video.png);height:100%;">
+            <div class="container">
+                <h1 style="color:white;text-align:center;padding-top:50px">Nossos trabalhos são nossas maiores fontes de inspiração para uma evolução contínua.</h1>
+            </div>
+        </div>
+    </section>
+
+    
+      <section id="trabalhos">
+        <div class="container">
+            <div class="col-lg-10 col-sm-12 col-md-12 col-lg-offset-2" style="padding-bottom:30px">
+                <h1 class="titulo-sessao wow slideInLeft" style="text-align:right">Nosso portifólio</h1>
+                <h3 class="sub-titulo-sessao wow slideInRight" style="text-align:right"></h3>
+            </div>
+
+        </div>
+    </section>
 
 
     <section id="contato">
@@ -545,7 +438,7 @@
     <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <span>Desenvolvido por  <img src="http://helloworldsoft.com/img/marca%20fundo%20transparente.png" style="max-height:30px">  <a href="http://www.helloworldsoft.com" target="_blank"> Hello World Softwares</a><span>
+        <span>Desenvolvido por  <img src="http://helloworldsoft.com/img/logo.png" style="max-height:30px">  <a href="http://www.helloworldsoft.com" target="_blank"> Hello World Softwares</a><span>
       </span></span></div>
     </div>
     </div>
