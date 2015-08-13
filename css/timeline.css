@@ -388,3 +388,11 @@
 .notice-info>strong {
     color: #45ABCD;
 }
+
+
+.nopadding {
+  padding: 1px !important;
+  margin: 0 !important;
+
+ 
+}

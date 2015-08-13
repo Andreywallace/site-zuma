@@ -28,12 +28,12 @@ $(window).bind('scroll', function () {
 
 
 $(function () {
-    $('#sobre, #fazemo, #trabalhos').css({
+    $('#sobre, #fazemo, #trabalhos, #grid-videos').css({
         'min-height': $(window).innerHeight()+100
     });
 
     $(window).resize(function () {
-        $('#sobre, #fazemo, #trabalhos').css({
+        $('#sobre, #fazemo, #trabalhos, #grid-videos').css({
             'min-height': $(window).innerHeight()+100
         });
     });
