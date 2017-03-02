@@ -18,8 +18,6 @@
     <!-- JQUERY E MAPS-->
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="js/mapa.js"></script>
 
 
     <!-- Fonts -->
@@ -28,6 +26,7 @@
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
 
 
     <!-- CSS -->
@@ -42,6 +41,52 @@
 </head>
 
 <body>
+    
+    
+    <!-- PRE LOADING -->
+<!--
+      <div class="overlay">
+      <svg class="svg svg--rays" _viewBox="0 0 500 500">
+    <circle r="50%" cx="50%" cy="50%" class="c-rays"></circle>
+</svg>
+
+<svg viewBox="0 0 280 280" class="svg svg--bird">
+    <defs>
+        <mask id="mask" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+            <image xlink:href="img/zuma.gif" 
+                   width="277" height="293"></image>
+        </mask>
+        
+        <linearGradient id="gr-1" x1="0" y1="0" x2="100%" y2="100%">
+              <stop offset="15%" class="stop-color stop-color--1"/>
+              <stop offset="45%" class="stop-color stop-color--2"/>
+              <stop offset="55%" class="stop-color stop-color--2"/>
+              <stop offset="85%" class="stop-color stop-color--3"/>
+        </linearGradient>
+        
+        <linearGradient id="gr-2" x1="0" y1="100%" x2="100%" y2="0%">
+              <stop offset="15%" class="stop-color stop-color--4"/>
+              <stop offset="45%" class="stop-color stop-color--5" stop-opacity="0"/>
+              <stop class="stop-color stop-color--5" stop-opacity="0"/>
+              <stop offset="85%" class="stop-color stop-color--6"/>
+        </linearGradient>
+    </defs>
+
+    <g mask="url(#mask)" class="g-container">
+        <rect 
+              fill="url(#gr-1)" 
+              width="100%" height="100%"
+              ></rect>
+        <rect 
+              fill="url(#gr-2)" 
+              width="100%" height="100%"
+              ></rect>
+    </g>
+</svg>
+    
+  </div>
+-->
 
     <header>
         <!--Video Section-->
@@ -54,7 +99,7 @@
                         <source src="video/flowers.webm" type="video/webm">
                 </video>
 
-                <div class="content">
+                <div class="content" id="video-content">
                     <div class="col-lg-12">
                         <img src="img/zuma_imagem.png" class="centralizar-imagem zuma-logo-principal animated  flipInX" />
                         <h3> </h3>
@@ -110,10 +155,7 @@
 
 
             <div href="#screens" id="transicao" class="hidden-xs">
-
                 <img src="http://www.radiorock.com.br/wp-content/themes/avenue/Avenue/static/img/razura-preta-topo.png" style="    margin-top: 0px;min-width: 100%;max-height: 40px;" />
-
-
             </div>
 
         </div>
@@ -133,12 +175,12 @@
 
 
 
-            <div class="col-lg-8 col-sm-12 col-md-12 col-lg-offset-2">
+            <div class="col-lg-12">
 
-                <h1 class="titulo-sessao wow slideInLeft" style="text-shadow:none">Descubra a Zuma</h1>
-                <h3 class="sub-titulo-sessao wow slideInRight" style="text-shadow:none;padding-bottom:20px">Uma produtora criativa de vídeos.</h3>
+                <h1 class="titulo-sessao wow slideInLeft" style="text-shadow:none">Descubra a Zuma Filmes</h1>
+                <h3 class="sub-titulo-sessao wow slideInRight" style="text-shadow:none;padding-bottom:20px">Satisfazemos nossos clientes e emocionamos telespectadores com uma liguagem cinematográfica.</h3>
                 <div class="embed-responsive embed-responsive-16by9" style="  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HD_xsGOJ8qA" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pJKZ2HqVCnQ" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -150,68 +192,82 @@
     <section id="parallaxBar" class="hidden-xs" data-speed="6" data-type="background">
         <div style="background:url(img/bg_video.png);height:100%">
             <div class="container">
-                <h1 style="color:white;text-align:center;padding-top:50px">Somos uma produtora responsável pela criação de conteúdos audiovisuais, que versam com a linguagem cinematográfica.</h1>
+                <h1 style="color:white;text-align:center;padding-top:50px">Produzimos vídeos para entreter, refletir e ampliar a comunicação das marcas para com a 
+                    sociedade.</h1>
             </div>
         </div>
     </section>
 
 
-    <section id="fazemo">
+    <section id="fazemo" class="cta cta--large cta-secondary">
         <div class="container">
             <div class="col-lg-10 col-sm-12 col-md-12 col-lg-offset-2" style="padding-bottom:30px">
-                <h1 class="titulo-sessao wow slideInLeft" style="text-align:right;text-shadow:none">Nossos serviços</h1>
-                <h3 class="sub-titulo-sessao wow slideInRight" style="text-align:right"></h3>
+                <h1 class="titulo-sessao wow slideInLeft" style="text-align:right;text-shadow:none;color:white">Nossos serviços</h1>
+                <h3 class="sub-titulo-sessao wow slideInRight" style="text-align:right;color:white">Todos podem ser criativos, mas poucos podem transformar sua ideia criativa em resultados positivos.</h3>
             </div>
 
             <div class="col-lg-4">
-                <img src="http://www.laboratoire-aleatoire.com/wp-content/uploads/2015/04/canon-camera-3.jpg" style="max-width:100%;max-height:200px">
-                <h4>Produção de vídeo</h4>
+               
+                <h1 class="titulo-sessao" style="    padding-top: 0px;"><i class="fa fa-copyright" aria-hidden="true" style="color:white"></i></h1>
+                <h2 style="text-align:center;color:white ;margin-top: 10px; margin-bottom:30px">Coorporativo</h2>
                 <div class="notice notice-success">
-                    <strong>Edição</strong>
+                    <strong>Institucional</strong>
                 </div>
                 <div class="notice notice-success">
-                    <strong>Filmagem</strong>
+                    <strong>Treinamentos</strong>
                 </div>
                 <div class="notice notice-success">
-                    <strong>Produção</strong>
+                    <strong>Tv Coorporativa</strong>
                 </div>
                 <div class="notice notice-success">
-                    <strong>Finalização</strong>
+                    <strong>Vídeo catálogo e manual</strong>
                 </div>
                 <div class="notice notice-success">
-                    <strong>Color correction</strong>
+                    <strong>Cobertura ao vivo para web</strong>
                 </div>
                 <div class="notice notice-success">
-                    <strong>Color granding</strong>
+                    <strong>Cobertura de eventos</strong>
+                </div>
+               
+            </div>
+            
+                <div class="col-lg-4">
+               <h1 class="titulo-sessao" style="    padding-top: 0px;"><i class="fa fa-bullhorn" style="color:white" aria-hidden="true"></i></h1>
+                <h2 style="text-align:center;color:white; margin-top: 10px; margin-bottom:30px">Publicitário</h2>
+                <div class="notice notice-success">
+                    <strong>Propaganda TV</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Propaganda Web</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Vídeoclipes</strong>
+                </div>
+                <div class="notice notice-success">
+                    <strong>Vídeos marketing para mídias sociais</strong>
                 </div>
             </div>
-            <div class="col-lg-4">
-
-                <img src="http://www.mvaudiogroup.com/wp-content/uploads/2015/01/mixing-desk1.jpg" style="max-width:100%;max-height:200px">
-                <h4>Audio</h4>
+            
+            
+              <div class="col-lg-4">
+               
+                <h1 class="titulo-sessao" style="    padding-top: 0px;"><i class="fa fa-film" aria-hidden="true" style="color:white"></i></h1>
+                <h2 style="text-align:center;color:white ;margin-top: 10px; margin-bottom:30px">Cinematográfico</h2>
                 <div class="notice notice-success">
-                    <strong>Sonorização</strong>
+                    <strong>Documentários</strong>
                 </div>
                 <div class="notice notice-success">
-                    <strong>Trilhas Autorais</strong>
+                    <strong>Mini-documentários</strong>
                 </div>
                 <div class="notice notice-success">
-                    <strong>Produção de spots</strong>
+                    <strong>Curta-metragens</strong>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <img src="http://www.mvaudiogroup.com/wp-content/uploads/2015/01/mixing-desk1.jpg" style="max-width:100%;max-height:200px">
-                <h4>Animação</h4>
-                <div class="notice notice-success">
-                    <strong>Edição</strong>
-                </div>
-                <div class="notice notice-success">
-                    <strong>Motion Graphics</strong>
-                </div>
-                <div class="notice notice-success">
-                    <strong>Animação de objetos</strong>
+                 <div class="notice notice-success">
+                    <strong>Programas para web</strong>
                 </div>
             </div>
+            
+          
 
 
 
@@ -221,7 +277,8 @@
     <section id="parallaxBar" class="hidden-xs" data-speed="6" style="background: url('img/lobo.jpg') 0% 0 fixed;background-size:cover">
         <div style="background:url(img/bg_video.png);height:100%;">
             <div class="container">
-                <h1 style="color:white;text-align:center;padding-top:50px">Produzimos filmes publicitários para tv ou internet, filmes corporativos e de marca.</h1>
+                <h1 style="color:white;text-align:center;padding-top:50px"> Do curta ao longa, produzimos vídeos que fazem valer todos os adjetivos que seu negócio merece.
+</h1>
             </div>
         </div>
     </section>
@@ -231,11 +288,11 @@
 
 
 
-    <section id="portifolio">
+    <section id="portifolio" >
         <div class="container">
             <div class="col-md-12 " style="padding-bottom:20px">
                 <h1 class="titulo-sessao wow slideInRight">Principais  Clientes </h1>
-                <p style="text-align:center; " class="wow slideInLeft">Conheça com quem já trabalhamos.</p>
+                <p style="text-align:center; " class="wow slideInLeft">Quem nos contrata não se arrepende.</p>
             </div>
 
             <div class="col-lg-4 col-md-6 wow flipInX " data-wow-delay="0.1s">
@@ -276,8 +333,123 @@
                 <!-- end card-container -->
 
             </div>
+            
+               <!-- CLIENTE 2 -->
+            <div class="col-lg-4 col-md-6 wow flipInX " data-wow-delay="0.9s">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="img/videos/museoLogo.png" />
+                            </div>
 
-            <!-- CLIENTE 2 -->
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">Museu da Gente Sergipana</h3>
+                                    <h5 style="text-align:center"><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <img src="img/videos/museu.jpg" style="max-width:100%" />
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h5 class="motto">Com eles tivemos experiências incríveis que valorizam e enaltecem a cultura popular sergipana.</h5>
+                                    <h5 style="text-align:center"><a href="http://www.museudagentesergipana.com.br/" target="_blank">Site</a></h5>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end back panel -->
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end card-container -->
+            </div>
+            <!-- FIM CLIENTE 2 -->
+
+
+
+            <!-- CLIENTE 3 -->
+            <div class="col-lg-4 col-md-6 wow flipInX " data-wow-delay="0.9s">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="img/videos/governologo.png" />
+                            </div>
+
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">Governo de Sergipe</h3>
+                                    <h5  style="text-align:center"><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <img src="img/videos/governo.jpg" style="max-width:100%" />
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h5 class="motto">.</h5>
+                                    <h5 style="text-align:center"><a href="http://www.segov.se.gov.br/" target="_blank">Site</a></h5>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end back panel -->
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end card-container -->
+            </div>
+            <!-- FIM CLIENTE 3 -->
+            
+            
+               <!-- CLIENTE 4 -->
+            <div class="col-lg-4 col-md-6 wow flipInX " data-wow-delay="0.9s">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="img/videos/itnetLogo.png" />
+                            </div>
+
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">Portal Itnet</h3>
+                                    <h5  style="text-align:center"><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <img src="img/videos/itnet.jpg" style="max-width:100%" />
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h5 class="motto">O maior portal de notícias do interior sergipano nos contratou para desenvolvermos uma web série sobre a cidade Itabaiana.</h5>
+                                    <h5 style="text-align:center"><a href="http://itnet.com.br/" target="_blank">Site</a></h5>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end back panel -->
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end card-container -->
+            </div>
+            <!-- FIM CLIENTE 4 -->
+
+            
+             <!-- CLIENTE 5 -->
             <div class="col-lg-4 col-md-6 wow flipInX " data-wow-delay="0.5s">
                 <div class="card-container">
                     <div class="card">
@@ -315,33 +487,36 @@
                 </div>
                 <!-- end card-container -->
             </div>
-            <!-- FIM CLIENTE 2 -->
-
-            <!-- CLIENTE 3 -->
-            <div class="col-lg-4 col-md-6 wow flipInX " data-wow-delay="0.9s">
+            <!-- FIM CLIENTE 5 -->
+            
+                         <!-- CLIENTE 6 -->
+            <div class="col-lg-4 col-md-6 wow flipInX " data-wow-delay="0.5s">
                 <div class="card-container">
                     <div class="card">
                         <div class="front">
                             <div class="cover">
-                                <img src="img/videos/sesclogo.jpg" />
+                                <img src="img/videos/Tchandala_logo.jpg" />
                             </div>
 
                             <div class="content">
                                 <div class="main">
-                                    <h3 class="name">Sesc Sergipe</h3>
-                                    <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
+                                    <h3 class="name">Tchandala</h3>
+
+                                    <h5 style="text-align:center"><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Sergipe </h5>
+
                                 </div>
                             </div>
                         </div>
                         <!-- end front panel -->
                         <div class="back">
                             <div class="header">
-                                <img src="img/videos/foliadagente.png" style="max-width:100%" />
+                                <img src="img/videos/tchandala.jpg" style="max-width:100%" />
                             </div>
                             <div class="content">
                                 <div class="main">
-                                    <h5 class="motto">Em 2015 começamos a desenvolver uma série de vídeos para o Sesc Sergipe.</h5>
-                                    <h5 style="text-align:center"><a href="http://www.sesc-se.com.br/" target="_blank">Site</a></h5>
+                                    <h5 class="motto">Produzimos o comercial da cerveja artezanal da maior banda de heavy metal sergipana.</h5>
+                                    <h5 style="text-align:center"><a href="https://www.facebook.com/Tchandala/?fref=ts" target="_blank">Facebook</a></h5>
+
                                 </div>
                             </div>
 
@@ -352,7 +527,7 @@
                 </div>
                 <!-- end card-container -->
             </div>
-            <!-- FIM CLIENTE 3 -->
+            <!-- FIM CLIENTE 6 -->
 
 
 
@@ -376,7 +551,7 @@
             <div class="col-lg-12 col-sm-12 col-md-12" style="padding-bottom:30px">
                 <h1 class="titulo-sessao wow slideInRight" style="text-align:left;text-shadow:none">Nosso portifólio  </h1>
 
-                <h3 class="sub-titulo-sessao wow slideInRight hidden-xs" style="text-align:left;text-shadow:none">Confira a qualidade dos nossos trabalhos.</h3>
+                <h3 class="sub-titulo-sessao wow slideInRight hidden-xs" style="text-align:left;text-shadow:none">Versatilidade, quantidade e qualidade que nos fazem aprender e evoluir.</h3>
             </div>
 
             <section id="grid-videos" style="padding-bottom:50px">
@@ -462,6 +637,12 @@
             </section>
 
             <section id="list-video" class="hidden-xs">
+                            <div class="col-lg-12 col-sm-12 col-md-12" style="padding-bottom:30px">
+                <h1 class="titulo-sessao wow slideInRight" style="text-align:right;text-shadow:none">Nossos detaques</h1>
+
+                <h3 class="sub-titulo-sessao wow slideInRight hidden-xs" style="text-align:right;text-shadow:none"></h3>
+            </div>
+                
                 <div class="row" style="padding:40px 0px">
                     <div class="col-lg-4">
                         <p>Titulo: Zé Peixe: além das águas</p>
@@ -486,11 +667,30 @@
           
                   <div class="row" style="padding:40px 0px">
                     <div class="col-lg-4">
+                        <p>Titulo: "One Billion Hops" </p>
+                        <p><small>Descrição: Cerveja artezanal comemorativa de 20 anos da Tchandala.</small>
+                        </p>
+                        <hr style="border-top:1px solid #5a423c">
+                        <p><small>Produto: Propaganda Web </small> </p>
+                       
+                   
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.youtube.com/embed/2GgBBh-ak1A" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                                  <div class="row" style="padding:40px 0px">
+                    <div class="col-lg-4">
                         <p>Titulo: DOMUM</p>
                         <p><small>Descrição: Adentrando a casa abandonada uma jovem sente a angustia e a dor do abandono recriando em movimentos corporais os sentimentos que um dia já passaram por aquele lugar.</small>
                         </p>
                         <hr style="border-top:1px solid #5a423c">
-                        <p><small>Produto: Curta </small> </p>
+                        <p><small>Cliente: Tchandala </small>
+                        <p><small>Produto: Curta metragem </small> </p>
                        
                    
 
@@ -501,7 +701,6 @@
 
                         </div>
                     </div>
-
                 </div>
                 
 
@@ -513,7 +712,7 @@
                         <hr style="border-top:1px solid #5a423c">
                         <p><small>Cliente: Instituto Banese </small>
                         </p>
-                        <p><small>Produto: Documentário</small> </p>
+                        <p><small>Produto: Institucional </small> </p>
                  
                  
 
@@ -536,11 +735,6 @@
                         <p><small>Cliente: Nu Tempo Dance Company</small>
                         </p>
                         <p><small>Produto: Documentário</small> </p>
-                       
-                  
-
-
-
 
                     </div>
                     <div class="col-lg-8">
@@ -548,37 +742,25 @@
                             <iframe src="https://www.youtube.com/embed/XS3BgR0DpUg" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
-
                 </div>
-
-              
-
 
                 <div class="row" style="padding:40px 0px">
                     <div class="col-lg-4">
-                        <p>Titulo: Uma Campanha Libertária</p>
+                        <p>Titulo: Uma campanha libertária</p>
                         <p><small>Descrição: Em discussão, liberdade e organização. A nossa voz é a voz das ruas e a nossa liberdade está em Marcha.</small></p>
                         <hr style="border-top:1px solid #5a423c">
                         <p><small>Cliente:PSOL </small>
                         </p>
                         <p><small>Produto: Documentário</small> </p>
-                      
-                   
-
-
-
-
-
                     </div>
                     <div class="col-lg-8">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe src="https://www.youtube.com/embed/04eocfVBYmU" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
-
                 </div>
                 
-                      <div class="row" style="padding:40px 0px">
+                <div class="row" style="padding:40px 0px">
                     <div class="col-lg-4">
                         <p>Titulo: O Natal da gente Sergipana</p>
 
@@ -609,10 +791,10 @@
 
 
     <section id="contato">
-        <div style="background:url('img/bg_video.png');padding-top:60px;">
+        <div style="background:url('img/bg_video.png');padding:60px 0px;">
             <div class="container-fluid">
                 <div class="col-lg-6">
-                    <h2 style="text-align:center " class="wow slideInleft">Entre em contato com a gente!</h4>
+                    <h2 style="text-align:center " class="wow slideInleft"><i class="fa fa-smile-o" aria-hidden="true"></i> Gostou? Entre em contato com a gente!</h4>
                 <h1  style="text-align:center" class="wow slideInRight">(79) 9924-5550 	</h1>		
 				
                     <div class="round-button centralizar-imagem wow zoomIn">
@@ -626,8 +808,8 @@
 				
                 </h4>
                 
-                <p style="padding-top:10px;margin:0 0 5px;text-align:center"  class="wow slideInleft">Solicite um orçamento. </p>
-                <p style="padding-top:10px;margin:0 0 5px;text-align:center"  class="wow slideInRight">contato@helloworldsoft.com</p>
+                <p style="padding-top:10px;margin:0 0 5px;text-align:center"  class="wow slideInleft">Solicite um orçamento gratuito, com o <i class="fa fa-coffee" aria-hidden="true"></i> por nossa conta. </p>
+                <p style="padding-top:10px;margin:0 0 5px;text-align:center"  class="wow slideInRight">contato@zumafilmes.com</p>
 
                 
                 <div id="buttons">
@@ -647,14 +829,13 @@
         </div>
        
     </section>   
- <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
-        <div id="map"></div>
+
 
     <section class="footer">
     <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <span>Desenvolvido por  <img src="http://helloworldsoft.com/img/logo.png" style="max-height:30px">  <a href="http://www.helloworldsoft.com" target="_blank"> Hello World Softwares</a><span>
+        <span>Desenvolvido por  <!--<img src="http://helloworldsoft.com/img/logo.png" style="max-height:30px"> --> <a href="http://helloworldsoft.com" target="_blank"> Hello World Softwares</a><span>
       </span></span></div>
     </div>
     </div>
@@ -664,140 +845,21 @@
 
          <!-- Bootstrap Core JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>   
-        <!-- Core JavaScript Files -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
            <!-- Custom Theme JavaScript -->
         <script src="js/custom.js"></script>
         <script src="js/jquery.mb.YTPlayer.js"></script>
 
     </body>
     
-    <!-- MODAIS DE CLIENTES -->
-    
-    <!-- MODAL SAMBA DE COCO -->
-     <div id="md_samba_coco" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-        <div class="modal-header bg-info" style="border-bottom: 0px solid #e5e5e5;">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h2 id="myModalLabel" class="text-center" style="color:white">"A oficina de Samba de Coco com o mestre Seu Diô foi uma das atrações do São João da Gente Sergipana 2014"</h2>
-                </div>
-                <div class="modal-body" style="padding:0px;">
-
-                    <div class="row">
-
-                        <div class="vid">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ac7KhViaVqc" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <!--./vid -->
-
-
-                    </div>
-                    <!--/row-->
-
-                </div>
-            </div>
-        </div>
-        </div>
-        <!-- FIM MODAL SAMBA DE COCO -->
-
-
-        <!-- MODAL AQUELE NEGOCIO DE DANCA -->
-        <div id="md_nu_tempo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="nutempodance" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-info" style="border-bottom: 0px solid #e5e5e5;">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h2 id="myModalLabel" class="text-center" style="color:white">Fundada pelo mestre-coreógrafo Everaldo Pereira, trabalha a fusão de formas da dança tradicional brasileira com movimentos europeus contemporâneos.</h2>
-                    </div>
-                    <div class="modal-body" style="padding:0px;">
-
-                        <div class="row">
-
-                            <div class="vid">
-                                <iframe src="https://player.vimeo.com/video/104509722" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                <p><a href="https://vimeo.com/104509722">Nu Tempo Dance Space</a> from <a href="https://vimeo.com/user1632896">Everaldo Pereira</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                            </div>
-                            <!--./vid -->
-
-
-                        </div>
-                        <!--/row-->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FIM MODAL AQUELE NEGOCIO DE DANCA -->
-
-
-        <!-- MODAL ORquestra DO ZÉ  -->
-        <div id="md_orquestra_ze" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="nutempodance" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-info" style="border-bottom: 0px solid #e5e5e5;">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h2 id="myModalLabel" class="text-center" style="color:white">Apresentação da Orquestra Zé Frevança em Laranjeiras durante a feirinha da gente.</h2>
-                    </div>
-                    <div class="modal-body" style="padding:0px;">
-
-                        <div class="row">
-
-                            <div class="vid">
-                                <iframe src="https://player.vimeo.com/video/130265934" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                <p><a href="https://vimeo.com/130265934">Dia 30 de janeiro</a> from <a href="https://vimeo.com/user40728421">Zuma Filmes</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
-                            </div>
-                            <!--./vid -->
-
-
-                        </div>
-                        <!--/row-->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FIM MODAL ORQUESTRA DO ZÉ-->
-
-        <!-- MODAL BABI DEPUTADA -->
-        <div id="md_orquestra_ze" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="nutempodance" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-info" style="border-bottom: 0px solid #e5e5e5;">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h2 id="myModalLabel" class="text-center" style="color:white">Campanha 2014 - Babi </h2>
-                    </div>
-                    <div class="modal-body" style="padding:0px;">
-
-                        <div class="row">
-
-                            <div class="vid">
-                                <iframe src="https://player.vimeo.com/video/129964058" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                <p><a href="https://vimeo.com/129964058">Campanha 2014 -Babi 01</a> from <a href="https://vimeo.com/user40728421">Zuma Filmes</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
-                            </div>
-                            <!--./vid -->
-
-
-                        </div>
-                        <!--/row-->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FIM MODAL BABI DEPUTADA-->
-
-
-        <!-- FIM MODAIS CLIENTES -->
+  
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 
         <script>
             new WOW().init();
         </script>
-        <script src="../js/init.js"></script>
+     <!--   <script src="../js/init.js"></script> -->
 
 
 

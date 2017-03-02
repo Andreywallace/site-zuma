@@ -1,3 +1,4 @@
+
 * {
     font-family: arial;
     margin: 0;
@@ -9,6 +10,9 @@
         font-size: 20px;
     }
 }
+
+
+
 
 .logo,
 .intro,
@@ -223,13 +227,14 @@ body {
     background-color: #b8a48d;
 }
 
-.margin-top-fluid {
-    padding-top: 150px !important;
+.margin-top-fixed {
+  
     margin-top: -50px !important;
+     padding-top: 150px !important;
 }
 
 @media (max-width: 728px) {
-    .margin-top-fluid {
+    .margin-top-fixed {
         padding-top: 150px !important;
     }
 }
@@ -750,21 +755,19 @@ p {
 }
 
 @media (min-width: 1200px) {
-    #map {
-        height: 32%
-    }
+
     .footer {
         height: 5%;
     }
     #sobre {
-        padding: 100px 0px 150px 0px;
+      /*  padding: 100px 0px 150px 0px; */
         margin-bottom: -20px;
-        margin-top: -20px;
+        margin-top: -50px;
         z-index: 0;
     }
     #contato {
   
-        min-height: 63%;
+        
     }
     #buttons {
         padding-top: 30px;
@@ -779,7 +782,9 @@ p {
 }
 
 @media (max-width: 767px) {
-    #sobre {}
+    #sobre {
+        margin-top: 50px;
+    }
 }
 /* Alinhar button center no contato */
 
@@ -838,14 +843,34 @@ p {
 
 
 #parallaxBar{
-    height:250px;
+    height:500px;
+    line-height: 500px;
+     text-align: center;
     background-color:#004c82;
     background: url('../img/bg_fazemos.jpg') 0% 0 fixed;
-    position: relative;   
-    
+    position: relative;      
 }
 
 #parallaxBar h1 {
-    font-family: 'Gloria Hallelujah', cursive;
+   font-family: 'Lato', sans-serif;
+ display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+        font-size: 3.3em;
+}
 
+
+.cta {
+background-image: url('https://www.laserfiche.com/content/themes/bbwp/assets/images/backgrounds/brand-graphic-01.svg');
+    background-size: cover;
+}
+
+.cta-secondary{
+background-color: #A0866D;
+}
+
+
+.notice{
+        font-size: 17px;
+    
 }

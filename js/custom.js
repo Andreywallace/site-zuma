@@ -5,18 +5,34 @@
 
 var num = 50; //number of pixels before modifying styles
 
+
+
+
+if(window.attachEvent) {
+    window.attachEvent('onload', yourFunctionName);
+} else {
+    if(window.onload) {
+ 
+    } else {
+        $('.overlay').delay(5000).fadeOut(1000);
+    }
+}
+
+
+
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() >= $(window).height()-100) {
         $('.menu').addClass('fixed');
-        $('#sobre').addClass('margin-top-fluid');
+        $('#sobre').addClass('margin-top-fixed');
          if($(window).width() >= 768) {
-                $('.opcao-menu').css({"padding":"15px 20px 15px 20px"}); 
-                $('.opcao-menu').css({"font-size":"16px"}); 
+               $('.opcao-menu').css({"padding":"15px 20px 15px 20px"}); 
+               $('.opcao-menu').css({"font-size":"16px"}); 
             }
-             $('.opcao-menu-brand').css({"padding":"0px 20px 0px 20px"});
+        $('.opcao-menu-brand').css({"padding":"0px 20px 0px 20px"});
         
     } else {
         $('.menu').removeClass('fixed');
+        $('#sobre').removeClass('margin-top-fixed');
          if($(window).width() >= 768) {
                 $('.opcao-menu').css({"padding":"40px 20px 40px 20px"});
                 $('.opcao-menu').css({"font-size":"20px"});
@@ -28,12 +44,12 @@ $(window).bind('scroll', function () {
 
 
 $(function () {
-    $('#sobre, #fazemo, #trabalhos, #grid-videos').css({
+    $('#sobre, #fazemo, #video-content').css({
         'min-height': $(window).innerHeight()+100
     });
 
     $(window).resize(function () {
-        $('#sobre, #fazemo, #trabalhos, #grid-videos').css({
+        $('#sobre, #fazemo, #video-content').css({
             'min-height': $(window).innerHeight()+100
         });
     });
@@ -135,6 +151,8 @@ $(function() {
 				'width' : $width+'px', 
 				'height' : $height+'px'
 			});
+            
+           
 			
 			// Hide video
 			$('video').hide();
@@ -165,7 +183,9 @@ $(function() {
 							
 				// Set the container to be the width and height of the screen
 				$('#container').css({'width' : $width+'px', 'height' : $height+'px'}); 
-							
+				
+                $('#video-content').css({'width' : $width+'px', 'height' : $height+'px'}); 
+                
 				if($boxRatio < $aspectRatio) { // If the screen ratio is less than the aspect ratio..
 					// Set the width of the video to the screen size multiplied by $adjRatio
 					$vid = $('#container video').css({'width' : $width*$adjRatio+'px'}); 
