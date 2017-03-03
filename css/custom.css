@@ -829,6 +829,7 @@ p {
 #container {
     position: relative;
     overflow: hidden;
+    background-color: black;
 }
 
 #container .content {

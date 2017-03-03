@@ -47,11 +47,23 @@ $(function () {
     $('#sobre, #fazemo, #video-content').css({
         'min-height': $(window).innerHeight()+100
     });
+    
+    
+    $(' .content-section, #container').css({
+        'min-height': $(window).innerHeight()-100
+    });
 
     $(window).resize(function () {
         $('#sobre, #fazemo, #video-content').css({
             'min-height': $(window).innerHeight()+100
         });
+        
+               
+        $('.content-section, #container').css({
+            'min-height': $(window).innerHeight()-100
+        });
+        
+        
     });
 });
 
@@ -121,6 +133,9 @@ $(document).ready(function () {
     
        $('div').removeClass('line');
   }
+    
+    
+    
 });
 
 
